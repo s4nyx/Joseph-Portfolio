@@ -1,0 +1,8 @@
+.awwardsLink {
+    position: fixed;
+    z-index: 9999;
+    transform: translateY(-50%);
+    top: 50%;
+    right: 0;
+  }
+  
