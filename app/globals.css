@@ -445,122 +445,6 @@ section {
   color: rgba(255, 255, 255, 0.5);
 }
 
-/* CONTACT BUTTON */
-
-.contact-button-wrapper {
-  width: 10vw;
-  height: fit-content;
-  display: flex;
-  pointer-events: all;
-}
-
-.contact-button-white {
-	height: 2.5vw;
-	padding: 0;
-	display: grid;
-	border-radius: 25px;
-	border: 2px solid white;
-	cursor: pointer;
-	position: relative;
-	background: white;
-	color: black;
-  outline-color: black;
-  outline-offset: 0.25vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  padding-left: 3vh;
-}
-
-
-.contact-button-white:is(:hover, :focus-visible) {
-	--active: 1;
-}
-
-.contact-button-white:active {
-  --pressed: 1;
-}
-
-.contact-button-white > span:nth-of-type(1) {
-	height: 100%;
-	width: 100%;
-	border-radius: 25px;
-	position: absolute;
-	inset: 0;
-  /* scale: calc(1 - (var(--pressed, 0) * 0.05)); */
-  /* transition: scale 0.1s; */
-}
-
-.contact-button-white:is(:hover, :focus-visible) .contact-button-container-white {
-	width: 100%;
-}
-
-.contact-button-container-white {
-	--mask-image: url(https://assets.codepen.io/605876/chev-mask_1.png);
-	--spread: 1.25vw;
-	--size: 1vw;
-	width: 2.25vw;
-	height: 100%;
-	background: black;
-	position: absolute;
-	left: 0;
-	transition: width 0.5s;
-	border-radius: 25px;
-	container-type: inline-size;
-}
-
-.contact-button-primary-white {
-	content: "";
-	position: absolute;
-	inset: 0;
-	background: hsl(0 100% 100% / 0.25);
-	z-index: 2;
-	mask: var(--mask-image) 50% 50% / var(--size) var(--size) no-repeat;
-	container-type: inline-size;
-}
-
-:where(.contact-button-primary-white, .contact-button-complimentary-white)::after {
-	--distance: calc(100cqi + 100%);
-	content: "";
-	height: calc(var(--size) * 4);
-	aspect-ratio: 1;
-	position: absolute;
-	left: 0%;
-	top: 50%;
-	translate: -50% -50%;
-	background: radial-gradient(hsl(0 100% 100%), transparent);
-	animation: fly-by calc((2 - var(--active, 0)) * 2s) infinite linear;
-}
-
-@keyframes fly-by {
-	0% { translate: -100% -50%; }
-	100% { translate: var(--distance) -50%; }
-}
-
-.contact-button-complimentary-white {
-	content: "";
-	position: absolute;
-	inset: 0;
-	opacity: var(--active, 0);
-	transition: opacity 0.5s;
-	background: hsl(0 100% 100% / 0.25);
-	mask:
-		var(--mask-image) calc(50% - (var(--spread) * 1)) 50% / var(--size) var(--size) no-repeat,
-		var(--mask-image) calc(50% - (var(--spread) * 2)) 50% / var(--size) var(--size) no-repeat,
-		var(--mask-image) calc(50% - (var(--spread) * 3)) 50% / var(--size) var(--size) no-repeat,
-		var(--mask-image) calc(50% + (var(--spread) * 1)) 50% / var(--size) var(--size) no-repeat,
-		var(--mask-image) calc(50% + (var(--spread) * 2)) 50% / var(--size) var(--size) no-repeat,
-		var(--mask-image) calc(50% + (var(--spread) * 3)) 50% / var(--size) var(--size) no-repeat;
-}
-
-.contact-buttonv-button-white > span:nth-of-type(2) {
-	padding: 0 1.1rem 0 calc(58px + 1.1rem);
-	display: grid;
-	place-items: center;
-	height: 100%;
-}
-
 /* COLORS */
 .white {
   color: white;
@@ -1385,25 +1269,6 @@ section {
   height: 3vw;
 }
 
-/* CONTACT BUTTON */
-
-.contact-button-wrapper {
-  width: 50vw;
-}
-
-.contact-button-white {
-	height: 10vw;
-	border-radius: 25px;
-	border: 2px solid white;
-  padding-left: 5vw;
-}
-
-.contact-button-container-white {
-	--spread: 1.25vw;
-	--size: 4vw;
-	width: 9vw;
-}
-
 /* CAROUSEL */
 
 .embla__progress {
@@ -1418,7 +1283,6 @@ section {
 }
 .carousel-button-icon {
   width: 2.5vw;
-  height: 2.5vw;
 }
 
 /* FOOTER */

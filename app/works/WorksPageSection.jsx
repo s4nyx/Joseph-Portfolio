@@ -602,17 +602,7 @@ export const WorksPageSection = () => {
                       <h2 className="subheadline white">
                         Let us get you a coffee.
                       </h2>
-                      <div className="contact-button-wrapper">
-                        <button className="contact-button-white">
-                          <span>
-                            <span className="contact-button-container-white">
-                              <span className="contact-button-primary-white"></span>
-                              <span className="contact-button-complimentary-white"></span>
-                            </span>
-                          </span>
-                          <span className="description black">Book a call</span>
-                        </button>
-                      </div>
+                      {/* Contact button removed */}
                     </div>
                     <div className="works-item-border" />
                   </div>

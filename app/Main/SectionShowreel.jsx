@@ -219,137 +219,75 @@ const SectionShowreel = () => {
             <div className="showreel-content-row-item-grid" />
           </div>
         </div>
-        <div>
-          {/*<!-- Component: Alternative Changelog feed --> */}
+        <div className="experience-container">
+          {/*<!-- Enhanced Experience Timeline --> */}
           <ul
-            aria-label="Alternative changelog feed"
+            aria-label="Experience timeline"
             role="feed"
-            className="relative flex flex-col gap-12 py-12 pl-6 text-sm before:absolute before:top-0 before:left-6 before:h-full before:-translate-x-1/2 before:border before:border-dashed before:border-zinc-500 after:absolute after:top-6 after:left-6 after:bottom-6 after:-translate-x-1/2 after:border after:border-zinc-700 lg:pl-0 lg:before:left-[8.5rem] lg:after:left-[8.5rem]"
+            className="relative flex flex-col gap-16 py-16 pl-8 text-sm before:absolute before:top-0 before:left-8 before:h-full before:-translate-x-1/2 before:border-l before:border-zinc-700 after:absolute after:top-8 after:left-8 after:bottom-8 after:-translate-x-1/2 after:border-l after:border-zinc-800 lg:pl-0 lg:before:left-[8.5rem] lg:after:left-[8.5rem]"
           >
             <li
               role="article"
-              className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-zinc-500 before:ring-2 before:ring-white lg:flex lg:gap-12 lg:pl-0 lg:before:left-[8.5rem]"
+              className="group relative pl-8 before:absolute before:left-0 before:top-4 before:z-10 before:h-3 before:w-3 before:-translate-x-1/2 before:rounded-full before:bg-zinc-600 before:ring-2 before:ring-zinc-700 before:transition-all before:duration-300 hover:before:scale-110 hover:before:bg-zinc-500 lg:flex lg:gap-12 lg:pl-0 lg:before:left-[8.5rem]"
             >
-              <h4 className="hidden text-2xl text-center font-medium leading-7 text-zinc-400 lg:block lg:w-28 ">
-                2025
+              <h4 className="hidden text-2xl text-center font-medium leading-7 text-zinc-500 lg:block lg:w-28">
+                2019.
               </h4>
-              <div className="flex flex-col flex-1 gap-2">
-                <h3 className="text-2xl font-medium leading-7 text-zinc-200">
-                  Senior Software Engineer (Yara)
-                  <span className="font-normal text-zinc-400 lg:hidden">
-                    {" "}
-                    - 2025
+              <div className="flex flex-col flex-1 gap-4 p-6 rounded-2xl bg-zinc-900/40 backdrop-blur-sm border border-zinc-700/30 transition-all duration-300 hover:border-zinc-600/50 hover:shadow-lg hover:shadow-zinc-900/20 group-hover:scale-[1.01]">
+                <h3 className="text-2xl font-bold leading-8 bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
+                  Project Manager & Software Development Manager | Self-Employed
+                  <span className="block text-lg font-normal text-zinc-400 lg:hidden mt-1">
+                    2019. – Present
                   </span>
                 </h3>
-                <ul className="pl-5 list-disc text-zinc-400 text-xl marker:text-zinc-500">
-                  <li>
-                    Maintained and developed an app that allows farmers to view
-                    satellite images of any given crop field and extrapolate
-                    important farming information used to improve future growth.
+                <ul className="pl-6 list-disc text-zinc-300 text-lg marker:text-zinc-500 space-y-2">
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Founded and operated an IT business delivering web and mobile solutions across industries.
                   </li>
-                  <li>
-                    Refactored highly fragile and error-prone Mapbox integration
-                    to allow easy addition and removal of map layers.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Managed multiple client projects simultaneously, ensuring requirements were met on time and within budget.
                   </li>
-                  <li>
-                    Led an initiative to provide extrapolation capability to the
-                    farmers. Farmers would be able to predict crop growth based
-                    on the available satellite images.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Interpreted business objectives into technical requirements and solutions.
                   </li>
-                  {/* <li>
-                    Developed smart contracts for NFT functionality, including
-                    royalty distribution and auction mechanisms, reducing
-                    transaction costs by 15% through gas optimization.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Oversaw client communication, stakeholder management, and strategic project planning.
                   </li>
-                  <li>
-                    Collaborated with a startup team in an Agile environment to
-                    deliver a scalable, user-centric platform, achieving a
-                    Google Lighthouse score of 92/100 for performance and
-                    accessibility.
-                  </li> */}
                 </ul>
               </div>
             </li>
             <li
               role="article"
-              className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-zinc-500 before:ring-2 before:ring-white lg:flex lg:gap-12 lg:pl-0 lg:before:left-[8.5rem]"
+              className="group relative pl-8 before:absolute before:left-0 before:top-4 before:z-10 before:h-3 before:w-3 before:-translate-x-1/2 before:rounded-full before:bg-zinc-600 before:ring-2 before:ring-zinc-700 before:transition-all before:duration-300 hover:before:scale-110 hover:before:bg-zinc-500 lg:flex lg:gap-12 lg:pl-0 lg:before:left-[8.5rem]"
             >
-              <h4 className="hidden text-2xl text-center font-medium leading-7 text-zinc-400 lg:block lg:w-28 ">
-                2022
+              <h4 className="hidden text-2xl text-center font-medium leading-7 text-zinc-500 lg:block lg:w-28">
+                2012.
               </h4>
-              <div className="flex flex-col flex-1 gap-2">
-                <h3 className="text-2xl font-medium leading-7 text-zinc-200">
-                  Senior Software Engineer (Personio)
-                  <span className="font-normal text-zinc-400 lg:hidden">
-                    {" "}
-                    - 2022
+              <div className="flex flex-col flex-1 gap-4 p-6 rounded-2xl bg-zinc-900/40 backdrop-blur-sm border border-zinc-700/30 transition-all duration-300 hover:border-zinc-600/50 hover:shadow-lg hover:shadow-zinc-900/20 group-hover:scale-[1.01]">
+                <h3 className="text-2xl font-bold leading-8 bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
+                  Senior Full Stack Developer | Web Agency
+                  <span className="block text-lg font-normal text-zinc-400 lg:hidden mt-1">
+                    February 2012. – Present
                   </span>
                 </h3>
-                <ul className="pl-5 list-disc text-zinc-400 text-xl marker:text-zinc-500">
-                  <li>
-                    Implemented missing and improved existing a11y support.
+                <ul className="pl-6 list-disc text-zinc-300 text-lg marker:text-zinc-500 space-y-2">
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Lead end-to-end development of websites and mobile applications tailored to client needs.
                   </li>
-                  <li>
-                    Developed a tool that allows components to switch between
-                    different visual languages. This high-impact tool is used by
-                    other teams to increase the adoption of the new design.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Collaborate closely with design and product teams to deliver user-friendly, business-focused solutions.
                   </li>
-                  <li>
-                    Led the design, development, and deployment of an internal
-                    React app, which displayed different metrics regarding the
-                    adoption of a design system.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Provide ongoing support, updates, and enhancements to existing projects.
                   </li>
-                  {/* <li>
-                    Optimized smart contract gas usage with OpenZeppelin
-                    libraries, reducing transaction costs by 20% for users.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Design websites, UI/UX elements, and company logos.
                   </li>
-                  <li>
-                    Enhanced front-end performance with TypeScript and lazy
-                    loading, achieving a Google Lighthouse score of 91/100fd for
-                    speed and accessibility.
-                  </li> */}
-                </ul>
-              </div>
-            </li>
-            <li
-              role="article"
-              className="relative pl-6 before:absolute before:left-0 before:top-2 before:z-10 before:h-2 before:w-2 before:-translate-x-1/2 before:rounded-full before:bg-zinc-500 before:ring-2 before:ring-white lg:flex lg:gap-12 lg:pl-0 lg:before:left-[8.5rem]"
-            >
-              <h4 className="hidden text-2xl text-center font-medium leading-7 text-zinc-400 lg:block lg:w-28 ">
-                2015
-              </h4>
-              <div className="flex flex-col flex-1 gap-2">
-                <h3 className="text-2xl font-medium leading-7 text-zinc-200">
-                  Full Stack Engineer (Squisheaze)
-                  <span className="font-normal text-zinc-400 lg:hidden">
-                    {" "}
-                    - 2015
-                  </span>
-                </h3>
-                <ul className="pl-5 list-disc text-zinc-400 text-xl marker:text-zinc-500">
-                  <li>
-                    Led front-end development of squisheaze.com, a visually
-                    dynamic e-commerce platform, using React, Next.js, and
-                    Tailwind CSS to create an engaging user interface.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Mentor and train junior developers to improve technical and professional skills.
                   </li>
-                  <li>
-                    Implemented interactive 3D product visualizations using
-                    Three.js, enhancing user experience and increasing user
-                    session duration by 20%.
-                  </li>
-                  <li>
-                    Optimized site performance with lazy loading and code
-                    splitting, achieving a Google Lighthouse score of 92/100 for
-                    speed and accessibility.
-                  </li>
-                  <li>
-                    Collaborated with designers and backend developers to
-                    integrate RESTful APIs, ensuring seamless functionality for
-                    product listings and user interactions.
-                  </li>
-                  <li>
-                    Utilized TypeScript to enhance code maintainability,
-                    reducing front-end bugs by 15% through strict type checking.
+                  <li className="transition-colors duration-200 hover:text-white">
+                    Continued partnership with the agency as a primary client after starting independent consultancy.
                   </li>
                 </ul>
               </div>

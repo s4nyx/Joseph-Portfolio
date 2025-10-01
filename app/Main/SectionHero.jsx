@@ -178,7 +178,7 @@ const SectionHero = () => {
               <div className="hero-titlebox">
                 <div className="hero-titlebox-gradient" />
                 <h1 className="headline hero-headline white" ref={titleRef}>
-                  I&apos;m Jay Kietzman <br /> Web2 and Web3
+                  I&apos;m Joseph Sorensen <br /> Web2 and Web3
                   <br /> Expert
                 </h1>
               </div>

@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/alt-text */
 "use client";
 import React, { useState, useRef, useEffect } from "react";
-import { ArrowUpRight, Instagram, Linkedin, Twitter } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import { useRouter, usePathname } from "next/navigation";
 import gsap from "gsap";
 import CustomEase from "gsap/CustomEase";
@@ -70,10 +70,10 @@ const NavigationBar = ({ onNavigate, setMenu, menu }) => {
         {/* Left Section */}
         <div className="navigation-inside-left">
           <Image
-            src="/images/dwlogonew2.webp"
-            className="navigation-inside-left-image"
-            width={53}
-            height={29}
+            src="/images/loading.gif"
+            className="w-16 h-16 rounded-full"
+            width={100}
+            height={100}
             alt="Logo"
           />
         </div>
@@ -83,19 +83,9 @@ const NavigationBar = ({ onNavigate, setMenu, menu }) => {
          <span className="text-white text-2xl">Welcome to my portfolio</span>
         </div>
 
-        {/* Right Section (Get in Touch Button) */}
+        {/* Right Section - Removed Get in Touch Button */}
         <div className="navigation-inside-right">
-          <button
-            className="button button-navigation button-transparent-border"
-            onClick={() => onNavigate("/contact")}
-          >
-            <div className="button-content">
-              <span className="small-description">Get In Touch</span>
-            </div>
-            <div className="button-circle button-circle-white">
-              <ArrowUpRight className="button-icon" />
-            </div>
-          </button>
+          {/* Contact button removed */}
         </div>
 
         {/* Mobile Menu Button */}
@@ -116,7 +106,6 @@ const NavigationBar = ({ onNavigate, setMenu, menu }) => {
 const MobileMenu = ({ menu, setMenu, onNavigate }) => {
   const menuContentRef = useRef(null);
   const menuNavRef = useRef(null);
-  const menuSocialRef = useRef(null);
 
   useEffect(() => {
     const tl = gsap.timeline({ paused: true });
@@ -136,16 +125,6 @@ const MobileMenu = ({ menu, setMenu, onNavigate }) => {
       .fromTo(
         menuNavRef.current,
         { transform: "translate3d(0, 5vh, 0) rotate(5deg)" },
-        {
-          transform: "translate3d(0, 0, 0) rotate(0deg)",
-          duration: 0.5,
-          ease: customEase,
-        },
-        0
-      )
-      .fromTo(
-        menuSocialRef.current,
-        { transform: "translate3d(0, 5vh, 0) rotate(-5deg)" },
         {
           transform: "translate3d(0, 0, 0) rotate(0deg)",
           duration: 0.5,
@@ -172,9 +151,9 @@ const MobileMenu = ({ menu, setMenu, onNavigate }) => {
     >
       <div className="menu">
         <div className="menu-content" ref={menuContentRef}>
-          {/* Navigation Links */}
+          {/* Navigation Links - Removed Contact */}
           <div className="menu-navigation" ref={menuNavRef}>
-            {["Home", "About", "Works", "Contact"].map((item, index) => (
+            {["Home", "About", "Works"].map((item, index) => (
               <p
                 key={index}
                 className="headline menu-navigation-text white"
@@ -191,12 +170,7 @@ const MobileMenu = ({ menu, setMenu, onNavigate }) => {
             ))}
           </div>
 
-          {/* Social Icons */}
-          <div className="menu-social" ref={menuSocialRef}>
-            <Instagram strokeWidth={1.25} className="menu-social-icon" />
-            <Twitter strokeWidth={1.25} className="menu-social-icon" />
-            <Linkedin strokeWidth={1.25} className="menu-social-icon" />
-          </div>
+          {/* Social Icons removed */}
         </div>
       </div>
     </div>

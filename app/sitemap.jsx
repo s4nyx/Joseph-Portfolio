@@ -18,11 +18,5 @@ export default function sitemap() {
         changeFrequency: 'weekly',
         priority: 0.8,
       },
-      {
-        url: 'https://dialedweb.com/contact',
-        lastModified: new Date(),
-        changeFrequency: 'weekly',
-        priority: 0.8,
-      },
     ]
   }

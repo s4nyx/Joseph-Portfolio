@@ -220,7 +220,7 @@ export const ContactPageSection = () => {
                   ref={contactItem6}
                 >
                   <p className="small-description grey">Email</p>
-                  <p className="description white">JFKietzman@gmail.com</p>
+                  <p className="description white">iamwebdevexpert@gmail.com</p>
                 </div>
                 <div
                   className="contact-content-item opacity-blur"

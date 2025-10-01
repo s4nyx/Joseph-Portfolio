@@ -1,10 +1,10 @@
 /* eslint-disable react/jsx-key */
-import { useEffect, useRef, memo, useState } from "react";
+import { useEffect, useRef, memo } from "react";
 import gsap from "gsap";
 import CustomEase from "gsap/CustomEase";
 import SplitText from "gsap/src/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { X, Zap } from "lucide-react";
+import { Zap } from "lucide-react";
 
 gsap.registerPlugin(SplitText, ScrollTrigger, CustomEase);
 
@@ -13,11 +13,6 @@ const SectionServices = () => {
   const subheadlineBoxRef = useRef();
   const titleRef = useRef();
   const descriptionRef = useRef();
-  const buttonRef = useRef();
-  const overlayRef = useRef();
-  const overlayWidgetRef = useRef();
-  const overlayWidgetButtonRef = useRef();
-  const [isOverlayVisible, setIsOverlayVisible] = useState(false);
 
   useEffect(() => {
     // subheadline box animation
@@ -48,10 +43,9 @@ const SectionServices = () => {
         opacity: 1,
         filter: "blur(0px)",
         yPercent: 0,
-        stagger: 0.085,
-        overwrite: true,
-        duration: 1,
-        ease: "power2",
+        stagger: 0.1,
+        duration: 0.75,
+        ease: "power1",
         scrollTrigger: {
           trigger: titleRef.current,
           start: "top 95%",
@@ -66,14 +60,19 @@ const SectionServices = () => {
     });
     gsap.fromTo(
       descriptionSplit.words,
-      { filter: "blur(8px)", opacity: 0, skewX: 0 },
+      {
+        "will-change": "opacity, transform",
+        filter: "blur(8px)",
+        opacity: 0,
+        yPercent: 100,
+      },
       {
         opacity: 1,
         filter: "blur(0px)",
-        skewX: 0,
-        stagger: 0.025,
-        overwrite: true,
-        ease: "sine",
+        yPercent: 0,
+        stagger: 0.05,
+        duration: 0.75,
+        ease: "power1",
         scrollTrigger: {
           trigger: descriptionRef.current,
           start: "top 95%",
@@ -81,121 +80,10 @@ const SectionServices = () => {
         },
       }
     );
-
-    // button animation
-    gsap.to(buttonRef.current, {
-      opacity: 1,
-      filter: "blur(0px)",
-      duration: 0.5,
-      ease: "power1",
-      overwrite: true,
-      scrollTrigger: {
-        trigger: buttonRef.current,
-        start: "top 95%",
-        once: true,
-      },
-    });
   }, []);
-
-  useEffect(() => {
-    // Dynamically load the Calendly script
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-
-    // Clean up script on component unmount
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
-
-  const toggleOverlay = () => {
-    if (!isOverlayVisible) {
-      // Show overlay
-      gsap.to(overlayRef.current, {
-        display: "flex",
-        opacity: 1,
-        duration: 0.3,
-        overwrite: true,
-      });
-      gsap.fromTo(
-        overlayWidgetRef.current,
-        { yPercent: 10, rotate: 5, opacity: 0 },
-        {
-          yPercent: 0,
-          rotate: 0,
-          opacity: 1,
-          duration: 0.5,
-          ease: customEase,
-          overwrite: true,
-        }
-      );
-      gsap.fromTo(
-        overlayWidgetButtonRef.current,
-        { opacity: 0, scale: 0.5 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 0.5,
-          ease: customEase,
-          overwrite: true,
-        }
-      );
-    } else {
-      // Hide overlay
-      gsap.to(overlayWidgetRef.current, {
-        yPercent: 10,
-        rotate: 5,
-        opacity: 0,
-        duration: 0.5,
-        ease: customEase,
-        overwrite: true,
-      });
-      gsap.to(overlayWidgetButtonRef.current, {
-        opacity: 0,
-        scale: 0.5,
-        duration: 0.5,
-        ease: customEase,
-        overwrite: true,
-      });
-      gsap.to(overlayRef.current, {
-        delay: 0.1,
-        opacity: 0,
-        duration: 0.5,
-        overwrite: true,
-        onComplete: () => {
-          overlayRef.current.style.display = "none";
-        },
-      });
-    }
-    setIsOverlayVisible(!isOverlayVisible);
-  };
 
   return (
     <section className="services">
-      <div
-        className="calendly-overlay"
-        ref={overlayRef}
-        style={{ display: "none", opacity: 0 }}
-        onClick={toggleOverlay}
-      >
-        <div className="calendly-overlay-widget" ref={overlayWidgetRef}>
-          <div className="calendly-overlay-widget-border" />
-          <div className="calendly-overlay-widget-scrollbar-hider" />
-          <div
-            className="calendly-inline-widget"
-            data-url="https://calendly.com/dialedweb/30min?hide_event_type_details=1&hide_gdpr_banner=1&background_color=1a1a1a&text_color=ffffff&primary_color=9b92a2"
-          />
-        </div>
-        <div
-          className="calendly-overlay-widget-button"
-          ref={overlayWidgetButtonRef}
-          onClick={toggleOverlay}
-        >
-          <X className="calendly-overlay-widget-button-icon" />
-        </div>
-      </div>
       <div className="services-content">
         <div className="textbox">
           <div className="subheadline-box opacity-blur" ref={subheadlineBoxRef}>
@@ -203,21 +91,7 @@ const SectionServices = () => {
             <h2 className="small-description grey">My Services</h2>
           </div>
 
-          <div
-            className="contact-button-wrapper opacity-blur"
-            ref={buttonRef}
-            onClick={toggleOverlay}
-          >
-            <button className="contact-button-white">
-              <span>
-                <span className="contact-button-container-white">
-                  <span className="contact-button-primary-white"></span>
-                  <span className="contact-button-complimentary-white"></span>
-                </span>
-              </span>
-              <span className="description black">Book a call</span>
-            </button>
-          </div>
+          {/* Contact button removed */}
         </div>
         <div className="services-content-container">
           <div className="services-content-container-left" />
