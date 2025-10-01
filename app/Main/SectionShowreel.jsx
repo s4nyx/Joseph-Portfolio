@@ -135,8 +135,8 @@ const SectionShowreel = () => {
             ref={showreelItemRef1}
           >
             <img
-              src="/logos/micro.png"
-              className="showreel-content-row-item-image"
+              src="/logos/spore.png"
+              className="showreel-content-row-item-image rounded-full"
               alt=""
             />
             <div className="showreel-content-row-item-grid" />

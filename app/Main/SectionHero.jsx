@@ -186,7 +186,7 @@ const SectionHero = () => {
                 className="big-description grey opacity-blur"
                 ref={descriptionRef}
               >
-                10 years experience in Web2 and Web3 development and UI/UX Building
+                14 years experience in Web2 and Web3 development and UI/UX Building
                 scalable and user-friendly web and mobile applications
               </p>
             </div>
