@@ -30,7 +30,7 @@ export const SectionFlower = () => {
     // Unload frames outside the buffer to free memory
     const unloadFramesOutsideBuffer = (currentFrame) => {
       Object.keys(loadedImages).forEach((key) => {
-        const frame = parseInt(key, 10);
+        const frame = parseInt(key, 36);
         if (frame < currentFrame - buffer || frame > currentFrame + buffer) {
           delete loadedImages[frame]; // Remove image from cache
         }
