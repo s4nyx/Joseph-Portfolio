@@ -127,7 +127,7 @@ const SectionTestimonials = () => {
                     />
                     <div className="flex w-full justify-center items-center  text-white text-2xl">
                       <a
-                        href="https://www.sporesjourney.com/"
+                        href="https://3d-gamefi-ecommerce-site.vercel.app/"
                         className="text-zinc-400 hover:text-zinc-50"
                         target="_blank"
                       >
@@ -173,7 +173,7 @@ const SectionTestimonials = () => {
                     />
                     <div className="flex w-full justify-center items-center  text-white text-2xl">
                       <a
-                        href="https://earn.brewlabs.info/"
+                        href="https://squisheaze.com/"
                         className="text-zinc-400 hover:text-zinc-50"
                         target="_blank"
                       >
