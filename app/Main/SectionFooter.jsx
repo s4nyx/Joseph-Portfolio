@@ -65,10 +65,10 @@ const SectionFooter = () => {
             height={29}
             alt="Logo"
           />
-          <h1 className="subheadline white">Joseph Sorensen</h1>
+          <h1 className="subheadline white">Alex Filiakov</h1>
           <p className="description grey">
-            14 years experience in Web2 and Web3 development, UI/UX Building
-            scalable and user-friendly web and mobile applications
+            over 20 years experience in Web development, UI/UX Building scalable
+            and user-friendly web and mobile applications
           </p>
         </div>
         <div className="footer-content-right">
@@ -85,11 +85,7 @@ const SectionFooter = () => {
                   Backend Development
                 </p>
               </div>
-              <div className="footer-column-contents-item">
-                <p className="description grey hover-text-grey">
-                  Smart Contract Development
-                </p>
-              </div>
+            
               <div className="footer-column-contents-item">
                 <p className="description grey hover-text-grey">
                   Ecommerce Development(Shopify)
@@ -115,7 +111,7 @@ const SectionFooter = () => {
       <div className="footer-divider" />
       <div className="footer-content-bottom">
         <p className="small-description grey">
-          © 2025 Joseph Sorensen All Rights Reserved
+          © 2025 Alex Filiakov All Rights Reserved
         </p>
         {/* Social icons removed */}
       </div>

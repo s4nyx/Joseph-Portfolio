@@ -142,7 +142,7 @@ const SectionTestimonials = () => {
                 <div className="testimonials-item-content">
                   <div className="w-full h-full flex flex-col justify-between">
                     <Image
-                      src="/images/personio.png"
+                      src="/images/adellaporta.png"
                       width={1200}
                       height={1200}
                       className="w-full rounded-xl"
@@ -150,7 +150,7 @@ const SectionTestimonials = () => {
                     />
                     <div className="flex w-full justify-center items-center  text-white text-2xl">
                       <a
-                        href="https://earn.brewlabs.info/"
+                        href="https://adellaporta.com/"
                         className="text-zinc-400 hover:text-zinc-50"
                         target="_blank"
                       >
@@ -188,7 +188,7 @@ const SectionTestimonials = () => {
                 <div className="testimonials-item-content">
                   <div className="w-full h-full flex flex-col justify-between">
                     <Image
-                      src="/images/pfp4.png"
+                      src="/images/haven.png"
                       width={1200}
                       height={1200}
                       className="w-full rounded-xl"
@@ -196,7 +196,7 @@ const SectionTestimonials = () => {
                     />
                     <div className="flex w-full justify-center items-center  text-white text-2xl">
                       <a
-                        href="https://program.crademaster.com/trade"
+                        href="https://havenservicing.com/"
                         className="text-zinc-400 hover:text-zinc-50"
                         target="_blank"
                       >

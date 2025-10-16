@@ -145,11 +145,18 @@ const SectionShowreel = () => {
             className="showreel-content-row-item opacity-blur"
             ref={showreelItemRef2}
           >
-            <img
-              src="/logos/cision.jpg"
-              className="showreel-content-row-item-image"
-              alt=""
-            />
+            <svg
+              width="120"
+              height="120"
+              viewBox="0 0 40 40"
+              fill="#ffffff"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M37.5 11.9v26.8H32V15.2l-6.8-4v11.7H14.4V11.3l-6.5 4v23.5H2.5V11.9L19.9 1.3l17.6 10.6zM14.6 38.7h10.7V28.1H14.6v10.6z"
+                fill="#ffffff"
+              ></path>
+            </svg>
             <div className="showreel-content-row-item-grid" />
           </div>
           <div
@@ -212,7 +219,7 @@ const SectionShowreel = () => {
             ref={showreelItemRef4}
           >
             <img
-              src="/logos/cssbestux.svg"
+              src="/logos/adellaporta_Logo_white.png"
               className="showreel-content-row-item-image"
               alt=""
             />
@@ -242,16 +249,20 @@ const SectionShowreel = () => {
                 </h3>
                 <ul className="pl-6 list-disc text-zinc-300 text-lg marker:text-zinc-500 space-y-2">
                   <li className="transition-colors duration-200 hover:text-white">
-                    Founded and operated an IT business delivering web and mobile solutions across industries.
+                    Founded and operated an IT business delivering web and
+                    mobile solutions across industries.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
-                    Managed multiple client projects simultaneously, ensuring requirements were met on time and within budget.
+                    Managed multiple client projects simultaneously, ensuring
+                    requirements were met on time and within budget.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
-                    Interpreted business objectives into technical requirements and solutions.
+                    Interpreted business objectives into technical requirements
+                    and solutions.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
-                    Oversaw client communication, stakeholder management, and strategic project planning.
+                    Oversaw client communication, stakeholder management, and
+                    strategic project planning.
                   </li>
                 </ul>
               </div>
@@ -261,33 +272,38 @@ const SectionShowreel = () => {
               className="group relative pl-8 before:absolute before:left-0 before:top-4 before:z-10 before:h-3 before:w-3 before:-translate-x-1/2 before:rounded-full before:bg-zinc-600 before:ring-2 before:ring-zinc-700 before:transition-all before:duration-300 hover:before:scale-110 hover:before:bg-zinc-500 lg:flex lg:gap-12 lg:pl-0 lg:before:left-[8.5rem]"
             >
               <h4 className="hidden text-2xl text-center font-medium leading-7 text-zinc-500 lg:block lg:w-28">
-                2012.
+                2013.
               </h4>
               <div className="flex flex-col flex-1 gap-4 p-6 rounded-2xl bg-zinc-900/40 backdrop-blur-sm border border-zinc-700/30 transition-all duration-300 hover:border-zinc-600/50 hover:shadow-lg hover:shadow-zinc-900/20 group-hover:scale-[1.01]">
                 <h3 className="text-2xl font-bold leading-8 bg-gradient-to-r from-white to-zinc-300 bg-clip-text text-transparent">
                   Senior Full Stack Developer | Web Agency
                   <span className="block text-lg font-normal text-zinc-400 lg:hidden mt-1">
-                    February 2012. – Present
+                    February 2013. – Present
                   </span>
                 </h3>
                 <ul className="pl-6 list-disc text-zinc-300 text-lg marker:text-zinc-500 space-y-2">
                   <li className="transition-colors duration-200 hover:text-white">
-                    Lead end-to-end development of websites and mobile applications tailored to client needs.
+                    Lead end-to-end development of websites and mobile
+                    applications tailored to client needs.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
-                    Collaborate closely with design and product teams to deliver user-friendly, business-focused solutions.
+                    Collaborate closely with design and product teams to deliver
+                    user-friendly, business-focused solutions.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
-                    Provide ongoing support, updates, and enhancements to existing projects.
+                    Provide ongoing support, updates, and enhancements to
+                    existing projects.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
                     Design websites, UI/UX elements, and company logos.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
-                    Mentor and train junior developers to improve technical and professional skills.
+                    Mentor and train junior developers to improve technical and
+                    professional skills.
                   </li>
                   <li className="transition-colors duration-200 hover:text-white">
-                    Continued partnership with the agency as a primary client after starting independent consultancy.
+                    Continued partnership with the agency as a primary client
+                    after starting independent consultancy.
                   </li>
                 </ul>
               </div>

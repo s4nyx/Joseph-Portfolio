@@ -178,15 +178,14 @@ const SectionHero = () => {
               <div className="hero-titlebox">
                 <div className="hero-titlebox-gradient" />
                 <h1 className="headline hero-headline white" ref={titleRef}>
-                  I&apos;m Joseph Sorensen <br /> Web2 and Web3
-                  <br /> Expert
+                  I&apos;m Alex Filiakov <br /> Web Expert
                 </h1>
               </div>
               <p
                 className="big-description grey opacity-blur"
                 ref={descriptionRef}
               >
-                14 years experience in Web2 and Web3 development and UI/UX Building
+                over 20 years experience in Web development and UI/UX Building
                 scalable and user-friendly web and mobile applications
               </p>
             </div>

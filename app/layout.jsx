@@ -3,9 +3,9 @@ import { Navigation } from "./Navigation";
 import Awwards from "./Awwards";
 
 export const metadata = {
-  title: "Joseph Sorensen | Get in Touch",
+  title: "Alex Filiakov | Get in Touch",
   description:
-    "Web2 and Web3 Expert. open to collaboration. Joseph Sorensen portfolio developed by iamwebdevexpert@gmail.com. Let's connect!",
+    "Web Expert. open to collaboration. Alex Filiakov portfolio developed by Alex Filiakov. Let's connect!",
   keywords: [
     "website design",
     "UX/UI design",
